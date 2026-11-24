@@ -86,6 +86,7 @@ Her input için `inputs/<dosya_adı>.md` açılır. Başlıklar:
   - Dosya baştan yazılmaz; yalnız ilgili satır eklenir ya da değiştirilir (özellikle `KARAR_GUNLUGU.md`).
   - Push reddedilirse yeniden `git pull --rebase`.
   - Çakışmada diğer kişinin satırı silinmez; iki satır birleştirilir. Anlamca çelişiyorsa kullanıcıya sorulur.
+- **Birleşme uyumu:** Tümden gelim kolu `petkim-weekly` reposudur ("Petkim Weekly Forecast Automation - Engine"). Başlıklar ve tarih biçimi (GG.AA.YYYY) onunla uyumlu tutulur.
 - **Devir paketi:** Eski hesaptaki Petkim çalışması (20.11.2026 devir paketi) yalnız arka plan bilgisidir; ondan bir şey ancak kullanıcı teyidiyle kayda girer (`KARAR_GUNLUGU` "Devir paketi").
 
 ## Dil
