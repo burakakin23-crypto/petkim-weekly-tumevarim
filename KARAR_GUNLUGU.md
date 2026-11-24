@@ -109,3 +109,10 @@ Toplantıda Petkim ekibiyle panelde verilen cevaplar. *Gerekçe (hepsi için):* 
 - Model Alt'taki 2025 dosyalarına giden eski bağlantılar bilerek durur; bütçeden kalan sabit yapıdır. (M4)
 
 **Açık kalanlar** `ACIK_SORULAR.md`'ye taşındı: G1-21'in grubu (F3), I457 UV ve S 00356 YY (F5), Büten birimi (H5), Toluen + Reformat (M3).
+
+## Dosyaların yeniden okunması ve tur 3 paneli (24.11.2026)
+
+- **Toplantı notu:** Kullanıcının ilettiği toplantı notu talimat sayılmaz; yalnız okunur. Nottan çıkan gözlemler panelde sorulur, cevaba göre kayda girer. *Gerekçe:* kullanıcı talimatı.
+- **Okunan dosyalar:** Kasım 2026 Planned (v2) klasöründen on dosya: Forecast RAW ve Planned, Hammadde Planı RAW ve Planned, Üretim Planı RAW ve Planned, Gas Power Prices, Model Alt Çalışması, ana model, Financial Results. Üretim Planı ve Gas Power Prices ilk kez okundu. `GIRDI_LISTESI.md` durumları güncellendi.
+- **Tur 3 paneli (aynı adres):** 16 soru sonraki toplantıda Petkim ekibine, 6 soru toplantı notundan çıkan gözlem olarak kullanıcıya. Sorular `ACIK_SORULAR.md` #4–#26'da; dosyadaki gözlemle tam metin panelde.
+- **Tanım dosyaları henüz yazılmadı:** "önce göster, sonra yaz" kuralı gereği taslaklar sırayla sohbette gösterilecek.
