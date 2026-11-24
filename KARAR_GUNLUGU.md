@@ -41,3 +41,10 @@ STAR tümevarım reposundan (`star-weekly-tumevarim`) şunlar alındı; içerikl
 - **Dönem/ufuk** açık sorusu `ACIK_SORULAR.md` #1 olarak kaydedildi.
 - **Girdi listesi** devirdeki 14 input ile başlatıldı, hepsi "⏳ dosya bekleniyor". *Gerekçe:* kullanıcı kararı.
 - **İsimlendirme:** `inputs/` tanım dosyası dönemsiz sabit ad taşır; gerçek ad kalıbı dosyanın içinde yazılır. *Gerekçe:* kullanıcı kararı; her hafta aynı tanım güncellenir, sürüm başına kopya oluşmaz.
+
+## Amaç ve yön (24.11.2026)
+
+- **Nihai hedef (STAR gibi):** Yalnız girdiler verilir, ana modelin çıktısı üretilir. Ana model ve Financial Results yalnız öğrenmek ve karşılaştırmak için kullanılır. *Gerekçe:* kullanıcı kararı. Devirdeki K-02 ("Excel ana model kalır, zincir otomatikleştirilir") bu kolda geçerli değildir.
+  - *Not:* İlk talimatın md. 23'üyle (uzun vadeli vizyon: Planned → Model Alt → ana model otomatik güncellenir) ilişkisi kullanıcıya soruldu.
+- **İki kol:** Petkim'in tümden gelim kolu (ana modeli tanıtıp modelden sonuca giden ayrı repo) vardır. Repo adı ve birleşme uyumu kullanıcıya soruldu. *Gerekçe:* kullanıcı cevabı.
+- **Skill'ler:** İlk skill (`petkim-girdi-tanitma`) ilk input tanıtıldıktan sonra, yaşanan adımlar kullanıcıya onaylatılarak yazılır. *Gerekçe:* kullanıcı kararı.
