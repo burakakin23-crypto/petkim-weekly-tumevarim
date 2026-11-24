@@ -6,6 +6,10 @@ Cevabı henüz verilmemiş konular. Cevaplanan soru buradan çıkar; sonucu `KAR
 
 | # | Soru | Etiket | İlgili input | Açılış tarihi |
 |---|---|---|---|---|
-| 1 | Haftalık forecast'ın dönemi ve ufku ne? Yalnız çalışılan ay mı (ör. Kasım) güncelleniyor, yoksa yıl sonuna kadar (Kasım + Aralık) mı? Aralık ve yıl toplamı haftalık raporda kullanılıyor mu? *(Devirde Ocak–Ekim gerçekleşen, Kasım–Aralık forecast görünüyordu; Aralık değerleri RAW'a bağlı değildi.)* | [Petkim ekibine sorulacak] | Genel | 24.11.2026 |
-| 2 | Temel ölçü birimleri ne? Miktar (ton?), fiyat (USD/ton?), tutar (USD mn?), para birimi; istisna birimler (KG, TL vb.) hangi dosyalarda? | [Petkim ekibine sorulacak] | Genel | 24.11.2026 |
-| 3 | Resmi ürün ve ürün grubu listesi ne? *(Devirde gözlenen gruplar: LDPE, LDPE-T, HDPE, PP, PVC, Toluen+Reformat, ticari ürünler; grup tanımları onaysızdı.)* | [Petkim ekibine sorulacak] | Genel | 24.11.2026 |
+| 4 | G1-21 ürünü hangi gruba ait? (Planned'da YYPE grubunda toplanıyor, fiyatı AYPE seviyesinde.) | [Petkim ekibine sorulacak] (ticaret) | Forecast Planned | 24.11.2026 |
+| 5 | I457 UV ve S 00356 YY, YYPE grubuna dahil mi? | [Petkim ekibine sorulacak] (ticaret) | Forecast Planned | 24.11.2026 |
+| 6 | Bütenin birimi gerçekten KG mı, yoksa ton mu? | [Petkim ekibine sorulacak] (planlama) | Hammadde Planı | 24.11.2026 |
+| 7 | Toluen ihracat miktarına Reformat ihracatı eklenir kuralı geçerli mi? | [Petkim ekibine sorulacak] | Model Alt Çalışması | 24.11.2026 |
+| 8 | Bir ay içindeki forecast periyotlarının adları ve sırası ne (0+30/31, Planned, sonrası)? | [Petkim ekibine sorulacak] | Genel | 24.11.2026 |
+| 9 | STAR nafta fiyatı nasıl belirleniyor? ("İthal + sabit prim" kuralı geçerli değil dendi.) | [Petkim ekibine sorulacak] | Hammadde Planı | 24.11.2026 |
+| 10 | Stok girdisi otomasyonda nasıl ele alınacak (haftalıkta mı güncellenir, aylık çalışmadan mı gelir)? | [Petkim ekibine sorulacak] | Stok raporları | 24.11.2026 |

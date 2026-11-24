@@ -9,7 +9,8 @@ Petkim haftalık forecast'ının tümevarım kolu: forecast'a giren input dosyal
 1. **Varsayımla devam edilmez.** Kullanıcının cevaplamadığı hiçbir konu kabul sayılmaz. Claude önerisini söyleyebilir; karar kullanıcınındır.
 2. **Emin olunmayan konu açık soru olur.** Petkim ekibinin bilmesi gereken konu "Petkim ekibine sorulacak" diye işaretlenir ve `ACIK_SORULAR.md`'ye eklenir. Bu sorular kullanıcı ve Petkim ekibiyle birlikte cevaplanır.
 3. **Soru-cevap düzeni.** Her seferinde en fazla 3–4 soru sorulur; mümkünse seçenekli.
-4. **Rakam yazılmaz.** `inputs/` dosyalarına, skill'lere ve listelere gerçek rakam ya da şirket verisi yazılmaz; yalnız yapı ve anlam.
+4. **Model doğru cevap sayılmaz; hata düzeltilmez, bildirilir.** Modelde hata ya da mantıksızlık görülürse Claude kendisi düzeltmez, ekibi uyarır. Elle girilmiş değer görülürse kaynağı sorulur; elle düzeltme uydurulmaz.
+5. **Rakam yazılmaz.** `inputs/` dosyalarına, skill'lere ve listelere gerçek rakam ya da şirket verisi yazılmaz; yalnız yapı ve anlam.
 
 ## Bilgi nerede durur
 
@@ -43,15 +44,24 @@ skills/
 
 ## Birimler
 
-Ölçü birimleri (miktar, fiyat, tutar, para birimi). Ekipten cevap bekleniyor (`ACIK_SORULAR.md` #2); o zamana kadar birim her input tanıtılırken o dosya için teyit edilir.
+- Miktar **ton**, fiyat **USD/ton**, Financial Results tutarı **USD mn**.
+- Bu kuraldan sapan birim (ör. KG etiketi) ilgili input'un tanım dosyasında yazılır ve teyit edilene kadar açık sorudur.
 
 ## Dönem tanımları
 
-Ekipten cevap bekleniyor (`ACIK_SORULAR.md` #1).
+- **Kapsam yalnız verilen forecast ayıdır.** Forecast ayı dışındaki aylarla ilgilenilmez; tek istisna stoktur.
+- Yılın kalan aylarını içeren aylık n+m verisinden (ör. 10+2) yalnız ilgili ay kullanılır.
+- **"Planned" periyoda verilen addır**, dosya türü değildir. Dosya ve klasör adına anlam yüklenmez; dönem dosyanın içeriğinden okunur.
+- Haftalığın ilk çalışması 0+30/31'dir. Periyot adlarının tam sırası açık (`ACIK_SORULAR.md`).
+- **Versiyon:** çıktı yalnız son versiyondan üretilir. v2, CFO yorumlarından sonra yapılan güncellemedir; her hafta oluşmaz.
+- **Stok:** her çalışma stokludur. Önceki ayın kapanış stoğu yetiştiyse forecast çalışılan aydan başlar; yetişmediyse bir önceki aydan başlatılır ve aradaki ayın kapanış stoğu forecast verisiyle tahmin edilir. Ticari ürünler stoksuzdur: alış miktarı = satış miktarı.
+- Haftalık çalışmada yalnız P&L forecast'i çıkarılır.
 
 ## Petkim yapısı
 
-- **Ürünler ve ürün grupları:** ekipten cevap bekleniyor (`ACIK_SORULAR.md` #3).
+- **Üretimden satış ürünleri** (Financial Results'taki adlarıyla): Etilen, Aromatik Yağ, Py-Gas, PS Propilen (PSP), KS Propilen (KSP), C4, Benzen, C5 Karışımı, Toluen, Ortoksilen, Ağır Arom, Paraksilen, Naphtha-Aromatic, ACN, Reformate, MEG, AYPE, AYPE-T, YYPE, PP, PTA, PA, Kostik, PVC.
+- **Ticari ürünler** sabit liste değildir; Forecast verisinin ticari ürün bölümünde ne varsa odur.
+- **RAW belirleyicidir:** RAW'daki bütün ürünlerin sonuca akması beklenir. Yeni ürün doğru stok ve maliyet yapısına bağlanır; hangi yapıya bağlanacağı sorulur, tahmin edilmez.
 - **Forecast ufku:** "Dönem tanımları"na bakınız.
 - **Input listesi:** `GIRDI_LISTESI.md`.
 

@@ -66,3 +66,46 @@ STAR tümevarım reposundan (`star-weekly-tumevarim`) şunlar alındı; içerikl
 - **RAW ve Planned çiftleri:** Kullanıcı tercih belirtmedi. Claude'un seçimi: iki ayrı tanım dosyası (`<ad>_RAW.md`, `<ad>_Planned.md`); RAW → Planned dönüşümü Planned tarafında yazılır. *Gerekçe:* "input başına tek dosya" kuralı ve girdi listesindeki satırlarla birebir eşleşme. Kullanıcı isterse değişir.
 - **Tur 1 soru paneli:** Eski çalışmada incelenen yedi dosyadan (Forecast RAW/Planned, Hammadde RAW/Planned, Model Alt, ana model, Financial Results) kalan açık sorular ve üç genel soru panelde toplandı (31 soru): https://claude.ai/artifact/Gn4D82qQUQnFFTSTF8YtwU. Cevaplar panelden okunur; onaylanan kayda, cevapsız kalan `ACIK_SORULAR.md`'ye gider. *Gerekçe:* kullanıcı talebi; toplantıda ekiple cevaplanacak.
 - **Tur 1 cevapları alındı (24.11.2026):** 31 sorunun 27'si toplantıda cevaplandı; 4'ü "sonra cevaplanacak" (G1-21'in grubu, I457 UV ve S 00356 YY, Büten birimi, Toluen+Reformat), 1'inin cevabı eksik (Planned'da olup RAW'da olmayan ürünler). Panel ikinci tura güncellendi (aynı adres): açık kalan 5 soru, cevaplardan doğan 7 yeni soru ve Claude'un cevaplardan anladığının 15 maddelik teyidi. Cevaplardan çıkan kararlar teyit turundan sonra bu günlüğe ve `CLAUDE.md`'ye işlenir. *Gerekçe:* varsayımla devam edilmez; notla verilen cevapların yorumu teyit edilmeden kural olmaz.
+
+## Tur 1 panel cevapları (24.11.2026)
+
+Toplantıda Petkim ekibiyle panelde verilen cevaplar. *Gerekçe (hepsi için):* panel cevabı; parantez içindeki kod panel sorusudur. Kişi adları buraya yazılmadı; yalnız ekip adı tutulur.
+
+**Kapsam ve dönem**
+- Kapsam yalnız verilen forecast ayıdır (örnekte Kasım). Forecast ayı dışındaki aylarla ilgilenilmez; tek istisna stoktur. (M1)
+- Yılın kalan aylarını içeren aylık n+m verisinden (ör. 10+2) yalnız ilgili ay kullanılır. (F2)
+- "Planned" bir dosya türü değil, periyoda verilen addır; ada anlam yüklenmez. Haftalığın ilk çalışması 0+30/31'dir; Planned aylık çalışmayı baz alır. (G1)
+- Çıktı yalnız son versiyondan üretilir. v2, CFO yorumlarından sonra yapılan güncellemedir ve her hafta oluşmaz; ilk versiyon klasörü karşılaştırma için bilerek tutulur. (G5)
+- Haftalık çalışmada yalnız P&L forecast'i çıkarılır. Forecast ayını etkilemeyen geçmiş ayın P&L'sinin boş olması sorun değildir. (A3)
+
+**Stok**
+- Her çalışma stokludur. Önceki ayın kapanış stoğu yetiştiyse forecast çalışılan aydan başlar; yetişmediyse bir önceki aydan başlatılır ve aradaki aya forecast verisi girilerek o ayın kapanış stoğu tahmin edilir. (G2)
+- Ticari ürünler stoksuz çalışılır: alış miktarı her zaman satış miktarına eşittir; aksi olursa ekip bildirir. (F10)
+
+**Birimler ve ürünler**
+- Temel birimler: miktar ton, fiyat USD/ton, Results tutarı USD mn. (G3)
+- Üretimden satış ürünleri (Financial Results'taki adlarıyla): Etilen, Aromatik Yağ, Py-Gas, PS Propilen (PSP), KS Propilen (KSP), C4, Benzen, C5 Karışımı, Toluen, Ortoksilen, Ağır Arom, Paraksilen, Naphtha-Aromatic, ACN, Reformate, MEG, AYPE, AYPE-T, YYPE, PP, PTA, PA, Kostik, PVC. Ticari ürünler sabit liste değildir; Forecast verisinin ticari ürün bölümünde ne varsa odur. (G4)
+
+**Girdiler**
+- Forecast RAW DATA haftalık gelir; ticaret ekibi hazırlar. (F1) Haftalık dosyanın yapısı aylıkla aynıdır, küçük değişiklikler olabilir; yapı dosya geldikçe öğrenilir, soru varsa sorulur. (F2)
+- Hammadde Planı RAW DATA haftalık gelir; planlama ekibi hazırlar. (H1)
+- İthal nafta fiyatı sabit bir kuralla üretilmez; her çalışmada girdi olarak verilir (beklenen kaynak planlama ekibi, bazen Daily Prices'a göre güncellenir). Farklı versiyon çalışılırsa ekip bildirir. (H2)
+- STAR nafta miktarının esas kaynağı STAR Financial Model'dir. (H3)
+- "STAR nafta fiyatı = ithal nafta fiyatı + sabit prim" kuralı geçerli değildir. (H4) Fiyatın nasıl belirlendiği açık (`ACIK_SORULAR.md`).
+- PS Propilen alış fiyatı PGP fiyatına eşit alınır. PGP adı sonra güncellenecek. (H6)
+- PETKİM&STAR Gas Power Prices: Model Alt Çalışması bu dosyadan beslenir; doğalgaz ve elektrik fiyat tahminlerini içerir. Bazen güncellenmez ve önceki haftanın verisi gönderilir; bu sorun sayılmaz. (kullanıcı, 24.11.2026 sohbet)
+- STAR payı STAR Results dosyasından %12 oranıyla alınır. (R3)
+
+**Ürün eşleme**
+- RAW'daki bütün ürünlerin sonuca akması beklenir. Yeni ürün doğru stok ve maliyet yapısıyla ilişkilendirilir; modeldeki bağlantı sistemi anlaşılarak sonuca yansıtılır. (F7) Planned'da olup RAW'da olmayan ürünler için de aynı cevap bilerek verildi: belirleyici olan RAW'dır. (F8; kullanıcı teyidi 24.11.2026)
+- RAW'daki AG 251 ile Planned'daki FH360 PP farklı ürünlerdir. (F6)
+- Tamlık kontrolünü (RAW'daki her ürün Planned'da var mı) Claude yapar. Planned'daki kontrol kolonları bu amaçladır ve şu an bozuktur. (F9)
+
+**Model hataları ve elle değerler**
+- Modelde hata ya da mantıksızlık görülürse Claude kendisi düzeltmez, ekibi uyarır. (F7)
+- Hata olarak teyit edilenler: HDPE grubundaki "EC 281 MB" etiketli satırın METHANOL satırını okuması (F4); ticari ürünlerdeki satır kayması ve çift sayım, "isimler düzeltilmeli" (M2).
+- Elle düzeltme normalde beklenmez; gerekirse ekip bildirir. (A1) Results'taki elle düzeltmelerin hepsi ekipçe açıklanacak; Claude'dan çözmesi beklenmez ama gördüğünü mutlaka bildirir. Upside/Downside dosyası ayrıca tanıtılacak. (R1) "CHECK with MODEL" farkı bu elle müdahalelerden gelir. (R2)
+- Forecast ayında hata yoksa model kontrolündeki diğer aylara ait hatalar görmezden gelinebilir. (A2)
+- Model Alt'taki 2025 dosyalarına giden eski bağlantılar bilerek durur; bütçeden kalan sabit yapıdır. (M4)
+
+**Açık kalanlar** `ACIK_SORULAR.md`'ye taşındı: G1-21'in grubu (F3), I457 UV ve S 00356 YY (F5), Büten birimi (H5), Toluen + Reformat (M3).
