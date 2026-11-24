@@ -46,5 +46,12 @@ STAR tümevarım reposundan (`star-weekly-tumevarim`) şunlar alındı; içerikl
 
 - **Nihai hedef (STAR gibi):** Yalnız girdiler verilir, ana modelin çıktısı üretilir. Ana model ve Financial Results yalnız öğrenmek ve karşılaştırmak için kullanılır. *Gerekçe:* kullanıcı kararı. Devirdeki K-02 ("Excel ana model kalır, zincir otomatikleştirilir") bu kolda geçerli değildir.
   - *Not:* İlk talimatın md. 23'üyle (uzun vadeli vizyon: Planned → Model Alt → ana model otomatik güncellenir) ilişkisi kullanıcıya soruldu.
+  - yerine geçer: 24.11.2026 – "STAR gibi" hedef geçerlidir; md. 23'ün vizyonu (Excel zincirinin otomatik güncellenmesi) bu kolda geçmez. *Gerekçe:* kullanıcı kararı.
 - **İki kol:** Petkim'in tümden gelim kolu (ana modeli tanıtıp modelden sonuca giden ayrı repo) vardır. Repo adı ve birleşme uyumu kullanıcıya soruldu. *Gerekçe:* kullanıcı cevabı.
+  - yerine geçer: 24.11.2026 – tümden gelim kolu "Petkim Weekly Forecast Automation - Engine" adıyla yürüyor (kullanıcının verdiği ad). GitHub repo adı ve birleşme uyumu (başlıklar, tarih biçimi) henüz cevaplanmadı.
+
+## İlk talimat (md. 1–32) (24.11.2026)
+
+- İlk talimatın metni (devir paketinde `A_Ilk_Talimat_Bolum1_md1-24.txt`, `B_Ilk_Talimat_Bolum2_md25-32.txt`) repoya girmez. Maddeler kullanıcıya tek tek teyit ettirilir; kalıcı kural `CLAUDE.md`'ye, karar bu günlüğe yazılır. Sade yapı korunur: md. 26'daki ayrı kayıtlar (Business Rule Register, Change/Exception/Assumption Log, Data Dictionary) açılmaz. *Gerekçe:* kullanıcı kararı.
+- Ayıklama henüz başlamadı; hiçbir madde şu an kural sayılmaz.
 - **Skill'ler:** İlk skill (`petkim-girdi-tanitma`) ilk input tanıtıldıktan sonra, yaşanan adımlar kullanıcıya onaylatılarak yazılır. *Gerekçe:* kullanıcı kararı.
