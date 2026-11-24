@@ -33,3 +33,11 @@ STAR tümevarım reposundan (`star-weekly-tumevarim`) şunlar alındı; içerikl
 - **Eşzamanlı çalışma:** tek dal `main`; her yazmadan önce `git pull --rebase`; küçük commit, hemen push; çakışmada satırlar birleştirilir, anlamca çelişki kullanıcıya sorulur.
 - **Rakam yazılmaz:** input dosyalarına gerçek rakam ya da şirket verisi yazılmaz; yalnız yapı ve anlam.
 - **`skills/` klasörü:** iş sırası ve bakış açısı skill'leri. Hangi skill'lerin açılacağı ayrıca sorulacak.
+
+## Birimler, ürünler, girdi listesi, isimlendirme (24.11.2026)
+
+- **Ölçü birimleri** Petkim ekibine sorulacak (`ACIK_SORULAR.md` #2); o zamana kadar her input'ta ayrıca teyit edilir. *Gerekçe:* kullanıcı kararı.
+- **Ürün ve ürün grubu listesi** Petkim ekibine sorulacak (`ACIK_SORULAR.md` #3). *Gerekçe:* kullanıcı kararı; devirdeki gruplar onaysızdı.
+- **Dönem/ufuk** açık sorusu `ACIK_SORULAR.md` #1 olarak kaydedildi.
+- **Girdi listesi** devirdeki 14 input ile başlatıldı, hepsi "⏳ dosya bekleniyor". *Gerekçe:* kullanıcı kararı.
+- **İsimlendirme:** `inputs/` tanım dosyası dönemsiz sabit ad taşır; gerçek ad kalıbı dosyanın içinde yazılır. *Gerekçe:* kullanıcı kararı; her hafta aynı tanım güncellenir, sürüm başına kopya oluşmaz.
