@@ -38,6 +38,7 @@ skills/
 ## İsimlendirme
 
 - `inputs/` altındaki tanım dosyasının adı **dönemsiz sabit addır**: dosya adındaki dönem, tarih ve sürüm kısmı atılır, boşluk ve Türkçe karakter sadeleştirilir (ör. `Hammadde Planı 10 2 11.2026_RAW DATA.xlsx` → `inputs/Hammadde_Plani_RAW.md`). Her hafta aynı tanım dosyası güncellenir.
+- RAW DATA ve Planned çiftleri iki ayrı tanım dosyasıdır (`<ad>_RAW.md`, `<ad>_Planned.md`); RAW → Planned dönüşümü Planned tarafında yazılır.
 - Dosyanın gerçek ad kalıbı (dönemin nasıl yazıldığı dahil) tanım dosyasının içinde yazılır.
 
 ## Birimler
@@ -65,6 +66,8 @@ Her input için `inputs/<dosya_adı>.md` açılır. Başlıklar:
 - **Birimler**
 - **Forecast'teki kullanımı**
 - **Açık sorular** (ayrıca `ACIK_SORULAR.md`'de listelenir)
+
+**Önce göster, sonra yaz:** Tanım dosyasına yazılacak içerik önce sohbette gösterilir; kullanıcı onayından sonra repoya girer. Teyitsiz her şey "Açık sorular"da durur.
 
 ## Oturum rutini
 

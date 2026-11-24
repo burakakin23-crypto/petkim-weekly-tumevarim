@@ -57,3 +57,10 @@ STAR tümevarım reposundan (`star-weekly-tumevarim`) şunlar alındı; içerikl
 - Ayıklama henüz başlamadı; hiçbir madde şu an kural sayılmaz.
 - Ayıklama toplu turda yapılmaz; önce toplantıda input'lar tanıtılır (24.11.2026). *Gerekçe:* kullanıcı kararı.
 - **Skill'ler:** İlk skill (`petkim-girdi-tanitma`) ilk input tanıtıldıktan sonra, yaşanan adımlar kullanıcıya onaylatılarak yazılır. *Gerekçe:* kullanıcı kararı.
+
+## Tanıtım turu (24.11.2026)
+
+- **Dönem:** Toplantıda tanıtılan dosyalar Kasım 2026 Planned dönemindendir; farklı dönemden gelen dosya yazılmadan önce kullanıcıya bildirilir. *Gerekçe:* kullanıcı kararı.
+- **Önce göster, sonra yaz:** Tanım dosyasına yazılacak içerik önce sohbette gösterilir; kullanıcı onayından sonra repoya girer. *Gerekçe:* kullanıcı kararı.
+- **Devirden kalan açık sorular (S-01…S-19):** İlgili dosya tanıtılırken, o dosyayı ilgilendirenler ekibe sorulmak üzere öne getirilir. *Gerekçe:* kullanıcı kararı.
+- **RAW ve Planned çiftleri:** Kullanıcı tercih belirtmedi. Claude'un seçimi: iki ayrı tanım dosyası (`<ad>_RAW.md`, `<ad>_Planned.md`); RAW → Planned dönüşümü Planned tarafında yazılır. *Gerekçe:* "input başına tek dosya" kuralı ve girdi listesindeki satırlarla birebir eşleşme. Kullanıcı isterse değişir.
