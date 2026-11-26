@@ -21,8 +21,8 @@ Petkim forecast zincirine giren dosyaların listesi. Tanıtım sırasında hiçb
 | 12 | Rapor 42 maliyet raporları, SATIŞLAR | Raporlama | ⏳ | – |
 | 13 | Results düzeltme dosyaları (Upside Downside Effects, Personnel CC Chargeback, STAR Results) | Results | ⏳ (Upside/Downside ayrıca tanıtılacak) | – |
 | 14 | 2026 Budget Model 65 USD Brent | Bütçe | ⏳ | – |
-| 15 | Petkim Waterfall Forecast Vs Budget (`… <Ay> Planned.xlsx`) | Sunum ara dosyası | ⏳ (sunumun kaynağı; `ACIK_SORULAR.md` #27) | – |
-| 16 | Sunum besleme dosyası (`PETKIM_STAR_Weekly_Forecast_Update_Presentation_<Ay>_Planned.xlsm`) ve Management meeting sunumu (`.pptx`) | Nihai çıktı | 🔍 (26.11.2026 incelendi; `KARAR_GUNLUGU` "Nihai çıktı") | – |
+| 15 | Petkim Waterfall Forecast Vs Budget (`… <Ay> Planned.xlsx`) | ❔ | ❔ (sunumun kaynağı; girdi mi ara çıktı mı: `ACIK_SORULAR.md` #27, #33) | – |
+| 16 | Sunum besleme dosyası (`PETKIM_STAR_Weekly_Forecast_Update_Presentation_<Ay>_Planned.xlsm`) ve Management meeting sunumu (`.pptx`) | Çıktı (Claude üretir) | 🔍 (26.11.2026 incelendi; örnek olarak tutulur, besleme dosyası bundan sonra gönderilmez; `KARAR_GUNLUGU` "Nihai çıktının kapsamı") | – |
 
 **24.11.2026:** Kasım 2026 Planned (v2) klasöründen on dosya geldi ve okundu (#1–#9). Tanım dosyaları "önce göster, sonra yaz" kuralıyla sırayla yazılacak. Dosyaların birbirine bağlandığı klasörler karışık görünüyor (ilk versiyon, v2 ve 0+30 klasörleri); çıktı için belirleyici olan son versiyondur (`KARAR_GUNLUGU` "Tur 1 panel cevapları").
 

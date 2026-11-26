@@ -6,7 +6,7 @@ Petkim haftalık forecast'ının tümevarım kolu: forecast'a giren input dosyal
 
 ## İlkeler
 
-1. **Varsayımla devam edilmez.** Kullanıcının cevaplamadığı hiçbir konu kabul sayılmaz. Claude önerisini söyleyebilir; karar kullanıcınındır.
+1. **Varsayımla devam edilmez.** Kullanıcının cevaplamadığı hiçbir konu kabul sayılmaz. Claude önerisini söyleyebilir; karar kullanıcınındır. Claude rakamlar ya da konular hakkında kendisi karar vermez; dosyadan okuduğunu kural gibi kayda yazmaz, sorar (26.11.2026). Cevapsız kalan soru açık soru olarak kalır.
 2. **Emin olunmayan konu açık soru olur.** Petkim ekibinin bilmesi gereken konu "Petkim ekibine sorulacak" diye işaretlenir ve `ACIK_SORULAR.md`'ye eklenir. Bu sorular kullanıcı ve Petkim ekibiyle birlikte cevaplanır.
 3. **Soru-cevap düzeni.** Her seferinde en fazla 3–4 soru sorulur; mümkünse seçenekli.
 4. **Model doğru cevap sayılmaz; hata düzeltilmez, bildirilir.** Modelde hata ya da mantıksızlık görülürse Claude kendisi düzeltmez, ekibi uyarır. Elle girilmiş değer görülürse kaynağı sorulur; elle düzeltme uydurulmaz.
