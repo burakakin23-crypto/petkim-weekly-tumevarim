@@ -29,3 +29,8 @@ Cevabı henüz verilmemiş konular. Soru numaraları sabittir (#1 dönem, #2 bir
 | 24 | STAR payı %12 hangi tutara uygulanıyor ("netting üzerinden")? | [Kullanıcı] | Financial Results | 24.11.2026 |
 | 25 | Toplantı notundaki iki yaklaşımdan hangisi bu repo, hangisi `petkim-weekly`? | [Kullanıcı] | Genel | 24.11.2026 |
 | 26 | Repoya kişi adı yazılsın mı, yalnız ekip adı mı? | [Kullanıcı] | Genel | 24.11.2026 |
+| 27 | `Petkim Waterfall Forecast Vs Budget` dosyası sunumun doğrudan kaynağı; girdi listesinde yok. Kim hazırlıyor, Financial Results'tan mı besleniyor, bütçe kolonunun kaynağı ne? | [Petkim ekibine sorulacak] | Waterfall dosyası, Sunum | 26.11.2026 |
+| 28 | Sunum besleme dosyasında Ethylene satırının LF hacmi ve fiyatı formülde `*0` ile sıfırlanmış. Bilinçli bir müdahale mi, gerekçesi ne? | [Petkim ekibine sorulacak] | Sunum besleme dosyası | 26.11.2026 |
+| 29 | Yıl sonu STAR katkısı (S02) aylık 9+3 Financial Results ile Planned v2 Financial Results'ın karışımından hesaplanıyor. Kural bu mu, haftalıkta hangi dosyalar esas? | [Petkim ekibine sorulacak] | Financial Results, Sunum | 26.11.2026 |
+| 30 | Sunumdaki stok slaytları (Ticari ürün stok seviyesi ve satış karşılama; Petkim üretilen ürün stokları, önceki ay kapanışı) bu kolun çıktısına dahil mi? | [Kullanıcı] | Stok raporları, Sunum | 26.11.2026 |
+| 31 | S10'daki ticari ürün listesi Waterfall dosyasının sabit satırlarından geliyor (kaynakta bir satır atlanmış; "Etylene" yazımı). Liste Forecast RAW'ın ticari bölümüyle mi eşleşmeli? | [Petkim ekibine sorulacak] (ticaret) | Waterfall dosyası, Forecast RAW | 26.11.2026 |
