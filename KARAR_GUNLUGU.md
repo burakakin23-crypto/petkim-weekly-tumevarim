@@ -134,3 +134,10 @@ Toplantıda Petkim ekibiyle panelde verilen cevaplar. *Gerekçe (hepsi için):* 
 
 - **Çıktıyı Claude üretir:** Girdiler (input'lar) verilir; Claude bunlardan modeli, ara çıktıları ve sunumu üretir. Sunum besleme Excel'i bundan sonra gönderilmez; sunumu Claude üretir. *Gerekçe:* kullanıcı kararı.
 - **Claude kendisi karar vermez:** Rakamlar ya da konular hakkında Claude kendisi karar vermez; cevapsız soru açık soru olarak kalır (`CLAUDE.md` İlke 1). *Gerekçe:* kullanıcı talimatı.
+- **Anayasa:** Kullanıcı bu kuralları "anayasa olarak al" dedi; `CLAUDE.md` başına "Anayasa" bölümü olarak yazıldı, diğer kuralların üstündedir. "Sorun varsa tekrar sor" da bu bölüme girdi. *Gerekçe:* kullanıcı talimatı.
+## Açık sorular #33–#35 ve #32'nin ilk cevabı (26.11.2026)
+
+- **Waterfall dosyası ara çıktıdır (#33):** `Petkim Waterfall Forecast Vs Budget` dosyasının karşılığını Claude girdilerden üretir; sunum bundan beslenir. Girdi olarak tanıtılmaz. *Gerekçe:* kullanıcı cevabı.
+- **Dashboard (#34):** Bu kolda yeni bir dashboard yapılacak; sunumdaki verileri gösterecek. *Gerekçe:* kullanıcı cevabı.
+- **Sunum formatı (#35):** Üretilecek sunumda mevcut sunumun formatı aynen kullanılır: kolon düzeni (LF / Budget / Change / Change %), bütçe 0 ya da oran çok büyükse "n.m.", Türkçe rakam biçimi ve negatif parantez, KPI kartları. *Gerekçe:* kullanıcı cevabı.
+- **Haftalık / yıllık (#32, ilk cevap):** "Haftalığı üretiyoruz ancak yıllıkta monthly'den beslen." Ay değerlerini Claude haftalık girdilerden üretir; yıl sonu değerleri aylık (monthly) forecast'tan beslenir. Hangi aylık dosyadan ve nasıl (yalnız aylık mı, haftalık ay ile birleştirilerek mi) beslendiği teyit edilecek; o zamana kadar #32 açık. *Gerekçe:* kullanıcı cevabı.

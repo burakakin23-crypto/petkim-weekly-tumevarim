@@ -4,6 +4,15 @@
 
 Petkim haftalık forecast'ının tümevarım kolu: forecast'a giren input dosyaları tek tek tanıtılır; her birinin yapısı, hangi alanın neye yaradığı ve forecast'a nasıl bağlandığı kayda geçirilir. Bu dosya projenin giriş noktası: her oturum önce bunu, sonra `KARAR_GUNLUGU.md`'yi okur.
 
+## Anayasa (kullanıcı, 26.11.2026)
+
+Kullanıcının "anayasa olarak al" dediği kurallar. Diğer bütün kuralların üstündedir; yalnız kullanıcı değiştirir.
+
+1. **Claude kendisi karar vermez.** Rakamlar ya da konular hakkında Claude kendisi karar vermez; dosyadan okuduğu yorumu kural gibi kayda yazmaz.
+2. **Sorun varsa tekrar sorar.** Cevap belirsizse ya da yeni bir sorun çıkarsa Claude yeniden sorar; cevapsız soru açık soru olarak kalır, varsayımla kapatılmaz.
+3. **Çıktıyı Claude üretir.** Girdiler verilir; Claude bunlardan modeli, ara çıktıları ve sunumu üretir. Sunum besleme Excel'i gönderilmez.
+4. **Nihai hedef Petkim yönetim sunumudur.** Yönetimin bildiği ve anladığı format budur; bu kolda yapılacak dashboard da bu verileri göstermelidir.
+
 ## İlkeler
 
 1. **Varsayımla devam edilmez.** Kullanıcının cevaplamadığı hiçbir konu kabul sayılmaz. Claude önerisini söyleyebilir; karar kullanıcınındır. Claude rakamlar ya da konular hakkında kendisi karar vermez; dosyadan okuduğunu kural gibi kayda yazmaz, sorar (26.11.2026). Cevapsız kalan soru açık soru olarak kalır.
